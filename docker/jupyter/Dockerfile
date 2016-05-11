@@ -8,3 +8,5 @@ RUN mkdir -p /root/.jupyter/ && \
     echo "c.NotebookApp.open_browser = False" >> /root/.jupyter/jupyter_notebook_config.py
 
 EXPOSE 8888
+
+CMD jupyter notebook

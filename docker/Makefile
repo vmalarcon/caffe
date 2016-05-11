@@ -13,10 +13,10 @@ standalone: cpu_standalone gpu_standalone
 
 
 cpu_standalone: standalone/cpu/Dockerfile
-	$(DOCKER) build -t caffe:cpu -f standalone/cpu/Dockerfile .
+	$(DOCKER) build -t caffe:cpu standalone/cpu
 
 gpu_standalone: standalone/gpu/Dockerfile
-	$(DOCKER) build -t caffe:gpu -f standalone/gpu/Dockerfile .
+	$(DOCKER) build -t caffe:gpu standalone/gpu
 
 docker_files: standalone_files
 
